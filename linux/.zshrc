@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/home/$USER/.oh-my-zsh
 
+export ZSH_TMUX_AUTOSTART=true
+export ZSH_TMUX_AUTOSTART_ONCE=true
+export ZSH_TMUX_AUTOCONNECT=false
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -140,3 +143,6 @@ if running_in_docker ; then
   cat /etc/motd
 fi
 
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/dev
+source $HOME/.local/bin/virtualenvwrapper.sh
